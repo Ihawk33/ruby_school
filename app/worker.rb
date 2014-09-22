@@ -1,11 +1,9 @@
-class Worker
+class Worker < Staff
 
-  attr_reader :first_name, :last_name, :age, :profession
+  attr_reader :profession
 
   def initialize(attr)
-    @first_name = attr[:first_name]
-    @last_name = attr[:last_name]
-    @age = attr[:age]
     @profession = attr[:profession]
+    super
   end
 end
